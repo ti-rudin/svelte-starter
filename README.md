@@ -1,6 +1,6 @@
 ## saasfrontends-svelte-starter
 
-![Svelte Codebase](https://yahooder.sirv.com/saasfrontends/meta/seo-svelte.png)
+![Svelte Codebase](https://yahooder.sirv.com/saasfrontends/github/svelte.png)
 
 ### Features
 
@@ -19,7 +19,7 @@
 
 ### Edition
 
-| Edition   | Vue2 | Vue3 | React | Svelte |
+| Edition   | [Vue2](https://github.com/AlexandroMtzG/vue2-starter) | [Vue3](https://github.com/AlexandroMtzG/vue3-starter) | [React](https://github.com/AlexandroMtzG/react-starter) | [Svelte](https://github.com/AlexandroMtzG/svelte-starter) |
 | --------- | ---- | ---- | ----- | ------ |
 | Starter   |      |      |       |    ✔️    |
 | Sandbox   |      |      |       |        |
