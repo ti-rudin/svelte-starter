@@ -1,6 +1,5 @@
 import type { UserLoggedResponse } from "@/application/contracts/core/users/UserLoggedResponse";
 import type { UserDto } from "@/application/dtos/core/users/UserDto";
-import { UserType } from "@/application/enums/core/users/UserType";
 import { accountStore } from "@/store/modules/accountStore";
 import { appStore } from "@/store/modules/appStore";
 import { authStore } from "@/store/modules/authStore";
@@ -49,16 +48,16 @@ const logged = (response: UserLoggedResponse) => {
     locale.set(response.user.locale ?? "en");
   }
 
-  const redirect = new URLSearchParams(location.search).get("redirect");
-  if (redirect) {
-    navigate(redirect);
-  } else {
-    if ((response.user as UserDto).type === UserType.Admin && import.meta.env.VITE_SVELTE_APP_SERVICE !== "sandbox") {
-      navigate("/admin");
-    } else {
-      navigate("/app/dashboard");
-    }
-  }
+  // const redirect = new URLSearchParams(location.search).get("redirect");
+  // if (redirect) {
+  //   navigate(redirect);
+  // } else {
+  //   if ((response.user as UserDto).type === UserType.Admin && import.meta.env.VITE_SVELTE_APP_SERVICE !== "sandbox") {
+  //     navigate("/admin");
+  //   } else {
+  //     navigate("/app/dashboard");
+  //   }
+  // }
 };
 
 const loggedOut = () => {
